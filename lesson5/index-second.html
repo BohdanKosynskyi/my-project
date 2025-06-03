@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk_UA">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<form action="URL">
+			<fieldset>
+				<legend>Профіль користувача</legend>
+				<div class="form-row">
+					<label for="input-name">Ваше ім'я</label>
+					<input type="text" name="user-name" id="input-name">
+				</div>
+				<div class="form-row">
+					<label for="user-photo">Ваше фото</label>
+					<input type="file" name="avatar" id="user-photo" required>
+				</div>
+				<div class="form-row">
+					<label for="birth-date">Дата вашого народження</label>
+					<input type="date" id="birth-date">
+				</div>
+				<div class="form-row">
+					<label for="input-email">Поштова адреса</label>
+					<input type="text" name="user-email" id="input-email" placeholder="youremail@email.com" required>
+				</div>
+				<div class="form-row">
+					<label for="input-password">Пароль</label>
+					<input type="password" name="user-password" id="input-password" required>
+				</div>
+				<div class="form-row">
+					<label for="input-gender">Стать</label>
+					<span class="gender">
+						<input type="radio" name="choise-gender" id="input-gender">Чоловіча
+						<input type="radio" name="choise-gender" id="input-gender">Жіноча
+					</span>
+				</div>
+				<div class="form-row">
+					<label for="painting">Інтереси</label>
+					<input type="checkbox" id="painting" name="painting" value="paint">Малювання
+					<label for="music"></label>
+					<input type="checkbox" id="music" name="music" value="to-do-music">Музика
+					<label for="photo"></label>
+					<input type="checkbox" id="photo" name="photo" value="to-do-photo">Фотографія
+					<label for="engineer"></label>
+					<input type="checkbox" id="engineer" name="engineer" value="to-do-engineering">Інженерія
+					<label for="it"></label>
+					<input type="checkbox" id="it" name="it" value="programing">Програмування
+					<label for="repair"></label>
+					<input type="checkbox" id="repair" name="repair" value="repairing">Ремонт
+					<label for="bascketball"></label>
+					<input type="checkbox" id="bascketball" name="bascketball" value="to-play-bascketball">Баскетбол
+					<label for="football"></label>
+					<input type="checkbox" id="football" name="football" value="to-play-football">Футбол
+					<label for="swim"></label>
+					<input type="checkbox" id="swim" name="swim" value="swiming">Плавання
+					<label for="dance"></label>
+					<input type="checkbox" id="dance" name="dance" value="dansing">Танці
+					<label for="theater"></label>
+					<input type="checkbox" id="theater" name="theater" value="visit-theater">Театр
+					<label for="cinema"></label>
+					<input type="checkbox" id="cinema" name="cinema" value="visit-cinema">Кіно
+					<label for="read"></label>
+					<input type="checkbox" id="read" name="read" value="reading">Читання
+				</div>
+				<div class="form-row">
+					<label for="to-know">Звідки ви про нас дізналися</label>
+					<select name="user-to-know" id="to-know" required>
+						<option value="" selected disabled>Виберіть варіант</option>
+						<option value="internet">З інтернету</option>
+						<option value="ads">З реклами</option>
+						<option value="friends">Від знайомих</option>
+						<option value="another">Інше</option>
+					</select>
+				</div>
+				<div class="form-row">
+					<label for="about-user">Розкажіть щось про себе</label>
+					<textarea name="user-interests" id="about-user" placeholder="щось цікаве" required></textarea>
+				</div>
+				<div class="form-row">
+					<label for="internet-profile">Посилання на вашу сторінку</label>
+					<input type="url" id="internet-profile">
+				</div>
+				<a href="https://www.google.com/">Умови конфіденційності</a>
+				<div class="form-row">
+					<input type="checkbox" required>Я погоджуюсь з умовами конфіденційності
+				</div>
+				<button type="reset" id="reset">Reset</button>
+				<button type="submit" id="submit-btn">Submit</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+</html>

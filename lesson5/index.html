@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/js/code.js">
+</head>
+
+
+<body>
+	<div class="container">
+		<form action="URL">
+			<div class="form-row">
+				<label for="input-name">Full name</label>
+				<input type="text" name="user-name" id="input-name">
+			</div>
+			<div class="form-row">
+				<label for="input-email">E-mail</label>
+				<input type="text" name="user-email" id="input-email" placeholder="youremail@email.com" required>
+			</div>
+			<div class="form-row">
+				<label for="input-password">Password</label>
+				<input type="password" name="user-password" id="input-password" required>
+			</div>
+			<div class="form-row">
+				<label for="input-password-second">Password again</label>
+				<input type="password" name="user-password-again" id="input-password-second" required>
+			</div>
+			<div class="form-row">
+				<label for="input-gender">Gender</label>
+				<span class="gender">
+					<input type="radio" name="choise-gender" id="input-gender">Male
+					<input type="radio" name="choise-gender" id="input-gender">Female
+				</span>
+			</div>
+			<div class="form-row">
+				<label for="input-age">Age</label>
+				<input type="number" name="user-age" id="input-age">
+			</div>
+			<div class="form-row">
+				<label for="select-course">Course</label>
+				<select name="user-course" id="select-course" required>
+					<option value="select-option" selected disabled>Select your course</option>
+					<option value="front-end">Front-end</option>
+					<option value="pyton">Pyton</option>
+					<option value="js">Java Script</option>
+					<option value="qa">QA manual</option>
+				</select>
+			</div>
+			<div class="form-row">
+				<label for="user-address-id">Your address</label>
+				<textarea name="user-address" id="user-address-id" placeholder="post index, Country, City, street"></textarea>
+			</div>
+			<div class="form-row">
+				<input type="checkbox" required>I agree to the terms & conditions
+			</div>
+			<button type="reset" id="reset" >Reset</button>
+			<button type="submit" id="submit-btn">Submit</button>
+		</form>
+	</div>
+</body>
+
+
+</html>

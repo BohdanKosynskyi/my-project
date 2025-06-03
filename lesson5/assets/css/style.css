@@ -1,0 +1,17 @@
+	.container {
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	.form-row {
+		margin-bottom: 10px;
+	}
+
+	.form-row label {
+		display: inline-block;
+		width: 200px;
+	}
+	textarea{
+		width: 150px;
+        height: 170px;
+	}
