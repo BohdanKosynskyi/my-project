@@ -12,7 +12,7 @@
 
 <body>
 	<div class="container">
-		<form action="URL">
+		<form action="URL" method="post">
 			<div class="form-row">
 				<label for="input-name">Full name</label>
 				<input type="text" name="user-name" id="input-name">
@@ -31,9 +31,11 @@
 			</div>
 			<div class="form-row">
 				<label for="input-gender">Gender</label>
+				<span class="gender">				
+					<input type="radio" name="choise-gender" id="male" value="male-gender">Male
+				</span>
 				<span class="gender">
-					<input type="radio" name="choise-gender" id="input-gender">Male
-					<input type="radio" name="choise-gender" id="input-gender">Female
+					<input type="radio" name="choise-gender" id="female" value="female-gender">Female
 				</span>
 			</div>
 			<div class="form-row">
@@ -52,12 +54,15 @@
 			</div>
 			<div class="form-row">
 				<label for="user-address-id">Your address</label>
-				<textarea name="user-address" id="user-address-id" placeholder="post index, Country, City, street"></textarea>
+				<textarea name="user-address" id="user-address-id"
+					placeholder="post index, Country, City, street"></textarea>
 			</div>
 			<div class="form-row">
-				<input type="checkbox" required>I agree to the terms & conditions
+				<label for="agreement">
+					<input type="checkbox" id="agreement" required>I agree to the terms & conditions
+				</label>
 			</div>
-			<button type="reset" id="reset" >Reset</button>
+			<button type="reset" id="reset">Reset</button>
 			<button type="submit" id="submit-btn">Submit</button>
 		</form>
 	</div>
