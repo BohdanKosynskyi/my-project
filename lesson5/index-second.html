@@ -10,7 +10,7 @@
 
 <body>
 	<div class="container">
-		<form action="URL">
+		<form action="URL" method="post">
 			<fieldset>
 				<legend>Профіль користувача</legend>
 				<div class="form-row">
@@ -88,8 +88,10 @@
 				</div>
 				<a href="https://www.google.com/">Умови конфіденційності</a>
 				<div class="form-row">
-					<input type="checkbox" required>Я погоджуюсь з умовами конфіденційності
-				</div>
+                    <label for="agreement">
+					    <input type="checkbox" id="agreement" required>Я погоджуюсь з умовами конфіденційності
+                    </label>
+                    </div>
 				<button type="reset" id="reset">Reset</button>
 				<button type="submit" id="submit-btn">Submit</button>
 			</fieldset>
