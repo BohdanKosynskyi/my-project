@@ -10,12 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <nav>
+            <nav class="main-menu">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="#about-me">About me</a></li>
@@ -33,7 +36,7 @@
                 <img src="assets/images/denis-photo.jpg" alt="Denis Novik">
             </div>
         </section>
-        <section class="gray">
+        <section class="gray" id="about-me-zone">
             <div class="container">
                 <h2 id="about-me">About me</h2>
                 <div class="content">
@@ -52,57 +55,57 @@
                 </hgroup>
                 <ul class="skills-list">
                     <li>
-                        <img src="assets/images/apps/Ps.svg" alt="Adobe Photoshop">
+                        <img src="assets/images/apps/Ps.svg" alt="Adobe Photoshop" id="ps">
                         <p>Adobe Photoshop</p>
                         <div>
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ps-one">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ps-two">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ps-three">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ps-four">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ps-five">
                         </div>
                     </li>
                     <li>
-                        <img src="assets/images/apps/Ai.svg" alt="Adobe Illustrator">
+                        <img src="assets/images/apps/Ai.svg" alt="Adobe Illustrator" id="ai">
                         <p>Adobe Illustrator</p>
                         <div>
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ai-one">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ai-two">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ai-three">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ai-four">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ai-five">
                         </div>
                     </li>
                     <li>
-                        <img src="assets/images/apps/Ae.svg" alt="Adobe After Effects">
+                        <img src="assets/images/apps/Ae.svg" alt="Adobe After Effects" id="af">
                         <p>Adobe After Effects</p>
                         <div>
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ae-one">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ae-two">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ae-three">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ae-four">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="ae-five">
                         </div>
                     </li>
                     <li>
-                        <img src="assets/images/apps/Figma.svg" alt="Figma">
+                        <img src="assets/images/apps/Figma.svg" alt="Figma" id="fi">
                         <p>Figma</p>
                         <div>
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
-                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="fi-one">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="fi-two">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="fi-three">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="fi-four">
+                            <img src="assets/images/apps/rating/star-icon.svg" alt="rating" id="fi-five">
                         </div>
                     </li>
                 </ul>
 
             </div>
         </section>
-        <section class="gray">
+        <section class="gray-portfolio">
             <div class="container">
                 <h2 id="portfolio">Portfolio</h2>
-                <div>
+                <div id="link">
                     <img src="assets/images/examples/Fashion-Store.jpg" alt="Fashion Store example">
                     <p>
                         <a href="https://md-fashion.ua" target="_blank">Online fashion store - Homepage</a>
@@ -115,9 +118,9 @@
                             Store-Concept</a>
                     </p>
                 </div>
-                <div>
+                <div class="portfolio-item-braun">
                     <img src="assets/images/examples/braun-landing.png" alt="Braun Landing Page">
-                    <p>
+                    <p class="braun-link">
                         <a href="https://braun-market.com.ua" target="_blank">Braun Landing Page - Concept</a>
                     </p>
                 </div>
@@ -151,7 +154,7 @@
                     </a>
                 </li>
             </ul>
-            <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+            <p>Like me on<br> LinkedIn, Instagram, Behance, Dribble</p>
         </div>
     </footer>
 
