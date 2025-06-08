@@ -19,7 +19,9 @@
 				</div>
 				<div class="form-row">
 					<label for="user-photo">Ваше фото</label>
-					<input type="file" name="avatar" id="user-photo" required>
+					<form action="/upload" method="post" enctype="multipart/form-data">
+						<input type="file" name="avatar" id="user-photo" required>
+					</form>
 				</div>
 				<div class="form-row">
 					<label for="birth-date">Дата вашого народження</label>
