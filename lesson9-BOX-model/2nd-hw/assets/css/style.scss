@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+$background-color: #39C;
+$background-border: #2B81AC;
+$text-color:#FFF;
+$paris: #3CC;
+$belgrade: #969;
+$venice: #C24747;
+$tel-aviv:#E2674A;
+$cair:#FC6;
+$new-york:#9C9;
+$new-delhi:#699;
+$san-francisco:#C69;
+$tokyo:#396;
+$sydney:#669;
+
+.city-weather{
+    width: 1440px;
+    background-color: $background-color;
+    border: 25px solid $background-border;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: min(90%, 1166px);
+    margin-left: 137px;
+    cursor: pointer;
+
+    li{
+        list-style: none;
+        a{
+        text-decoration: none;
+    }
+    }
+
+    
+}
+
+.flex-item:nth-child(1){
+    width: 50%;
+    // flex-grow: 2;
+    background-color: $background-color;
+
+    &:hover{
+        opacity: .5;
+    }
+}
+.flex-item:nth-child(2){
+    background-color: $paris;
+
+    &:hover{
+        opacity: .5;
+    }
+}
+.flex-item:nth-child(3){
+    background-color: $belgrade;
+
+    &:hover{
+        opacity: .5;
+    }
+}
+.flex-item:nth-child(4){
+    background-color: $venice;
+
+    &:hover{
+        opacity: .5;
+    }
+}
+.flex-item:nth-child(5){
+    background-color: $tel-aviv;
+
+    &:hover{
+        opacity: .5;
+    }
+}
+.flex-item:nth-child(6){
+    background-color: $cair;
+
+    &:hover{
+        opacity: .5;
+    }
+}
+.flex-item:nth-child(7){
+    background-color: $new-york;
+
+    &:hover{
+        opacity: .5;
+    }
+    
+}
+.flex-item:nth-child(8){
+    background-color: $new-delhi;
+
+    &:hover{
+        opacity: .5;
+    }
+}
+.flex-item:nth-child(9){
+    background-color: $san-francisco;
+    width: 50%;
+
+    &:hover{
+        opacity: .5;
+        background-color: $tokyo;
+    }
+}
+
+.flex-item:nth-child(10){
+    background-color: $tokyo;
+
+    &:hover{
+        opacity: .5;
+        background-color: $tokyo;
+    }
+}
+
+.flex-item:nth-child(11){
+    background-color: $sydney;
+    width: 100%;
+    // flex-grow: 4;
+
+    &:hover{
+        opacity: .5;
+        background-color: $tokyo;
+    }
+
+    
+}
+
+.flex-item{
+    border: 1px solid #fff;
+    width: 25%;
+    height: 147px;
+}
+
+.city{
+    margin: 26px auto 92px;
+    text-align: center;
+    color: $text-color;
+}
+
+h1{
+    color: $text-color;
+    font-family: "Lucida Sans Unicode";
+    font-size: 1.31rem;
+    font-weight: 400;
+    margin: 66.1px 0 40px 135px;
+}
+p{
+    position: relative;
+    text-align: center;
+    bottom: 80px;
+    color: $text-color;
+    font-family: "Lucida Sans Unicode";
+    font-size: 1.375;
+    font-weight: 400;
+}
+
+i{
+    color: $text-color
+    font-family: "Weather Icons";
+    font-size: 2.625rem;
+    font-weight: 400;
+}
+.last-p{
+    text-align: left;
+    top: 10px;
+    font-family: "Lucida Sans Unicode";
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 37px 0 119px 137px;
+}
