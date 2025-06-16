@@ -8,134 +8,100 @@
 $background-color: #39C;
 $background-border: #2B81AC;
 $text-color:#FFF;
-$paris: #3CC;
-$belgrade: #969;
-$venice: #C24747;
-$tel-aviv:#E2674A;
-$cair:#FC6;
-$new-york:#9C9;
-$new-delhi:#699;
-$san-francisco:#C69;
-$tokyo:#396;
-$sydney:#669;
+$blue: #3CC;
+$violet: #969;
+$red: #C24747;
+$orange:#E2674A;
+$yellow:#FC6;
+$light-green:#9C9;
+$mint:#699;
+$pink:#C69;
+$green:#396;
+$dark-violet:#669;
+$white:#fff;
 
-.city-weather{
-    width: 1440px;
+body{
     background-color: $background-color;
     border: 25px solid $background-border;
+}
+
+.city-weather{
+    width: min(90%, 1170px);
+    margin: 0 auto;
+    padding: 2px;
 }
 
 .container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: min(90%, 1166px);
-    margin-left: 137px;
     cursor: pointer;
-
+    background-color: $white;
+    padding: 2px;
+    
     li{
+        padding: 2px;
         list-style: none;
         a{
         text-decoration: none;
     }
     }
-
     
+}
+
+ul:hover li:not(:hover) {
+    opacity: .7;
 }
 
 .flex-item:nth-child(1){
     width: 50%;
-    // flex-grow: 2;
     background-color: $background-color;
-
-    &:hover{
-        opacity: .5;
-    }
 }
+
 .flex-item:nth-child(2){
-    background-color: $paris;
-
-    &:hover{
-        opacity: .5;
-    }
+    background-color: $blue;
 }
+
 .flex-item:nth-child(3){
-    background-color: $belgrade;
-
-    &:hover{
-        opacity: .5;
-    }
+    background-color: $violet;
 }
+
 .flex-item:nth-child(4){
-    background-color: $venice;
-
-    &:hover{
-        opacity: .5;
-    }
+    background-color: $red;
 }
+
 .flex-item:nth-child(5){
-    background-color: $tel-aviv;
-
-    &:hover{
-        opacity: .5;
-    }
+    background-color: $orange;
 }
+
 .flex-item:nth-child(6){
-    background-color: $cair;
-
-    &:hover{
-        opacity: .5;
-    }
+    background-color: $yellow;
 }
+
 .flex-item:nth-child(7){
-    background-color: $new-york;
-
-    &:hover{
-        opacity: .5;
-    }
-    
+    background-color: $light-green;
 }
+
 .flex-item:nth-child(8){
-    background-color: $new-delhi;
-
-    &:hover{
-        opacity: .5;
-    }
+    background-color: $mint;
 }
-.flex-item:nth-child(9){
-    background-color: $san-francisco;
-    width: 50%;
 
-    &:hover{
-        opacity: .5;
-        background-color: $tokyo;
-    }
+.flex-item:nth-child(9){
+    background-color: $pink;
+    width: 50%;
 }
 
 .flex-item:nth-child(10){
-    background-color: $tokyo;
-
-    &:hover{
-        opacity: .5;
-        background-color: $tokyo;
-    }
+    background-color: $green;
 }
 
 .flex-item:nth-child(11){
-    background-color: $sydney;
-    width: 100%;
-    // flex-grow: 4;
-
-    &:hover{
-        opacity: .5;
-        background-color: $tokyo;
-    }
-
-    
+    background-color: $dark-violet;
+    width: 100%;  
 }
 
 .flex-item{
-    border: 1px solid #fff;
+    border: 2px solid $white;
     width: 25%;
     height: 147px;
 }
@@ -151,7 +117,7 @@ h1{
     font-family: "Lucida Sans Unicode";
     font-size: 1.31rem;
     font-weight: 400;
-    margin: 66.1px 0 40px 135px;
+    margin: 66.1px 0 40px 0;
 }
 p{
     position: relative;
@@ -164,16 +130,17 @@ p{
 }
 
 i{
-    color: $text-color
+    color: $text-color;
     font-family: "Weather Icons";
     font-size: 2.625rem;
     font-weight: 400;
 }
+
 .last-p{
     text-align: left;
     top: 10px;
     font-family: "Lucida Sans Unicode";
     font-size: 1rem;
     font-weight: 400;
-    margin: 37px 0 119px 137px;
+    margin: 37px 0 119px 0;
 }
