@@ -16,6 +16,8 @@ ul {
 
 img {
     vertical-align: top;
+    left: 75px;
+    top: -1px;
 }
 
 a,
@@ -156,16 +158,20 @@ header {
     }
 
     img {
-        right: 20px;
-        top: 20px;
+        position: relative;
+        // right: 220px;
+        // top: 20px;
     }
 
 }
 
 .features {
+    width: min(90%, 1230px);
+    margin: 0 auto;
+
     h2 {
         width: 539px;
-        line-height: 40px;
+        line-height: 43px;
         color: $text-color;
         margin: auto;
         text-align: center;
@@ -183,6 +189,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
         }
 
         .card li {
@@ -213,6 +220,8 @@ header {
 }
 
 footer {
+    width: min(90%, 1230px);
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 
