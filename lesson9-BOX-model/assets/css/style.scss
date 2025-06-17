@@ -183,7 +183,7 @@ header {
     .background-image {
         background-image: url(../images/bg.svg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 100% 120%;
 
         .card {
             display: flex;
