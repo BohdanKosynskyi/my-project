@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$text-color: #000000;
+$logo-color: #1A1A1A;
+$text-beckground-color: #DADADA;
+
+@import 'fonts';
+
+.container {
+	width: min(90%, 1200px);
+	margin: 0 auto;
+	position: relative;
+	padding-top: 20px;
+}
+
+.pseudo-heder {
+	display: inline-block;
+	height: 70px;
+	vertical-align: center;
+	font-family: 'PT Sans';
+
+	span:nth-child(2) {
+		padding-left: 100px;
+	}
+
+	img {
+		position: absolute;
+		right: 0;
+		color: $logo-color;
+	}
+}
+
+h3 {
+	font-family: "Francois One";
+	font-size: 2.25rem;
+	font-weight: 400;
+	line-height: 3rem;
+	letter-spacing: 0.09rem;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+h3:not(:first-child) {
+	margin-top: 70px;
+}
+
+.chapter {
+	color: $text-color;
+	font-feature-settings: 'sups' on;
+	font-family: 'Farro';
+	font-size: 1.875rem;
+	font-weight: 300;
+	letter-spacing: 0.075rem;
+	bottom: 25px;
+	position: relative;
+	display: inline-block;
+	text-transform: capitalize
+}
+
+.text-part {
+	color: $text-color;
+	font-family: "PT Sans";
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 3rem;
+	display: block;
+
+	.underline {
+		text-decoration-line: underline;
+	}
+
+	.italic-text {
+		font-style: italic;
+	}
+
+	.bold-text {
+		font-weight: bold;
+	}
+
+	.bacground-text {
+		background-color: $text-beckground-color;
+	}
+}
+
+.spase-part{
+	margin-bottom: 40px;
+
+	&:last-child{
+		margin-bottom: 90px;
+	}
+}
