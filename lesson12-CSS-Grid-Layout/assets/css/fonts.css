@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Delius Unicase Regular';
+    src:url('../fonts/DeliusUnicase-Regular.woff2') format('woff2');
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1125rem;
+}
