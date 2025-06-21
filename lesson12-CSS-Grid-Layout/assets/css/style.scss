@@ -33,7 +33,7 @@ h3{
 .first-section, .second-section, .third-section{
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .container:last-child{
