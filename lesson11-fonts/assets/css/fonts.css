@@ -48,3 +48,17 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Tourney Expanded SemiBold';
+    src: url('../fonts/tourney/Tourney-Expanded-SemiBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Staatliches regular';
+    src: url('../fonts/Staatliches/Staatliches-Regular.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}

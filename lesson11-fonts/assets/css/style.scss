@@ -23,8 +23,13 @@ $text-beckground-color: #DADADA;
 	vertical-align: center;
 	font-family: 'PT Sans';
 
+	span:nth-child(1){
+		font-family: 'Tourney Expanded SemiBold';
+	}
+
 	span:nth-child(2) {
 		padding-left: 100px;
+		font-family: 'Staatliches regular';
 	}
 
 	img {
