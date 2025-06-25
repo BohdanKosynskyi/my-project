@@ -61,7 +61,7 @@ h3:not(:first-child) {
 	font-size: 1.875rem;
 	font-weight: 300;
 	letter-spacing: 0.075rem;
-	bottom: 25px;
+	bottom: 13px;
 	position: relative;
 	display: inline-block;
 	text-transform: capitalize
@@ -90,6 +90,7 @@ h3:not(:first-child) {
 
 	.bacground-text {
 		background-color: $text-beckground-color;
+
 	}
 }
 
@@ -99,4 +100,8 @@ h3:not(:first-child) {
 	&:last-child{
 		margin-bottom: 90px;
 	}
+}
+
+section{
+	margin-top: 70px;
 }
