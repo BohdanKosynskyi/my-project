@@ -1,0 +1,240 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import 'fonts';
+
+$main-color: #1C1C1C;
+$text-color: #545454;
+$subtitle-color: #969696;
+$button-color: #007BFF;
+$button-text: #fff;
+
+.container {
+	width: min(90%, 1440px);
+	margin: 0 auto;
+}
+
+.block {
+	max-width: 570px;
+	min-height: 590px;
+	margin: 0 auto;
+	box-shadow: 0 4px 16px;
+	padding: 35px 35px 16px;
+}
+
+h1 {
+	color: $main-color;
+	font-family: 'Roboto Medium';
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 2rem;
+	padding-bottom: 20px;
+}
+
+.profile{
+	display: inline-flex;
+}
+
+#user-photo{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.upload{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+
+
+.custom{
+	color: $text-color;
+	padding: 3px;
+	border: 1px solid $subtitle-color;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 138px;
+	height: 30px;
+	padding: 6px;
+
+	img{
+		margin-left: 110px;
+	}
+}
+
+input[type="file"]{
+	display:none;
+}
+
+
+
+span{
+	color: $subtitle-color;
+	font-family: 'Roboto Regular';
+	font-size: 0.8125rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.125rem;
+	letter-spacing: -0.00625rem;
+	margin-top: 9px;
+}
+
+#trash{
+	border: 1px solid $subtitle-color;
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+	padding: 6px;
+	margin-left: 10px;
+}
+
+
+
+.name-mail{
+	margin-top: 20px;
+	display: flex;
+	gap: 12px;
+
+	.user-data label{
+		padding-bottom: 7px;
+		font-family: 'Roboto Regular';
+		font-size: 0.9375rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.375rem;
+		letter-spacing: -0.0125rem;
+		color: $text-color;
+	}
+
+	.user-data input{
+		font-family: 'Roboto Regular';
+		margin-top: 7px;
+		width: 245px;
+		border-radius: 5px;
+		padding-left: 10px;
+		border:1px solid $text-color;
+		width: 245px;
+		height: 38px;
+		justify-content: center;
+		align-items: center;
+
+		&:focus{
+			border: 2px solid $button-color;
+			outline: none
+		}
+	}
+}
+
+.location-info {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+
+	.location label {
+		display: flex;
+		width: 245px;
+		height: 38px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 0.4375rem;
+		flex-shrink: 0;
+		font-family: 'Roboto Regular';
+		color: $text-color;
+	}
+
+	select,
+	input {
+		display: flex;
+		width: 245px;
+		height: 38px;
+		border-radius: 5px;
+		color: $text-color;
+		font-family: 'Inter Regular';
+		padding-left: 10px;
+		border:1px solid #545454;
+		&:focus{
+			border: 2px solid $button-color;
+			outline: none
+		}
+	}
+		input[type='number'],
+		input[type="number"]:hover,
+		input[type="number"]:focus {
+    		appearance: none;
+			margin: 0;
+	}
+	
+
+	.location select option {
+		color: $text-color;
+		font-family: 'Inter Regular';
+		font-size: 0.9375rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.375rem;
+		letter-spacing: -0.0125rem;
+	}
+
+	select {
+		appearance: none;
+		background: url('../../../../images/Arrow.svg') right 20px top 10px no-repeat;
+	}
+}
+.user-adress {
+	display: flex;
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.adress-data label {
+	padding-bottom: 7px;
+	font-family: 'Roboto Regular';
+	font-size: 0.9375rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.375rem;
+	letter-spacing: -0.0125rem;
+	color: $text-color;
+
+
+}
+
+.adress-data input {
+	font-family: 'Roboto Regular';
+	margin-top: 7px;
+	width: 245px;
+	border-radius: 5px;
+	padding-left: 10px;
+	height: 38px;
+	border:1px solid $text-color;
+	&:focus{
+			border: 2px solid $button-color;
+			outline: none
+		}
+}
+
+.button a {
+	display: flex;
+	background-color: $button-color;
+	width: 150px;
+	height: 38px;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	color: $button-text;
+	font-family: 'Roboto Medium';
+	font-size: 0.9375rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.375rem;
+	letter-spacing: -0.00625rem;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 28px 0 20px;
+}

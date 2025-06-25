@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+	<header></header>
+
+	<main>
+		<div class="container">
+			<div class="block">
+				<h1>Create an Account</h1>
+				<div class="first-last-name">
+					<div class="name-inp">
+						<label for="first-name">First Name</label>
+						<input type="text" name="first-name" id="first-name">
+					</div>
+					<div class="name-inp">
+						<label for="last-name">Last Name</label>
+						<input type="text" name="last-name" id="last-name">
+					</div>
+				</div>
+				<div class="email-info">
+					<label for="mail">E-mail</label>
+					<input type="email" name="mail" id="mail" required
+					pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+					<p>We'll never share your email with anyone else.</p>
+				</div>
+				<div class="gender">
+					<input type="radio" name="gender" id="male" value="male">
+					<label for="male">Male</label>
+					<input type="radio" name="gender" id="female" value="female">
+					<label for="female">Female</label>
+				</div>
+				<div class="location-info">
+					<div class="location">
+						<label for="country">Country</label>
+						<select name="country" id="country">
+							<option value="select" selected disabled>select</option>
+							<option value="Ukraine">Ukraine</option>
+							<option value="France">France</option>
+							<option value="United Kingdom">United Kingdom</option>
+						</select>
+					</div>
+					<div class="location">
+						<label for="city">City</label>
+						<input type="text" name="city" id="city">
+					</div>
+				</div>
+				<div class="button">
+					<a href="assets/css/2nd-page/index.html"><div>Sign Up</div></a>
+				</div>	
+				<h2>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and
+					<a href="#">Privacy Policy</a></h2>
+				<hr>
+				<div class="have-an-account">
+					<p>Have an account?</p>
+					<a href="#"><p class="login">Log In</p></a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+</body>
+
+</html>
