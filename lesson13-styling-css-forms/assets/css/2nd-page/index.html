@@ -13,64 +13,64 @@
 	<main>
 		<div class="container">
 			<div class="block">
-				<h1>Profile</h1>
-				<div class="profile">
-					<img src="../../images/371fb92137b3492967f1388aeb36d05399feeafd.png" alt="user-photo"
-						id="user-photo">
-					<div class="upload">
-						<input type="file" id="custom-upload">
-						<label for="custom-upload" class="custom"><img src="../../images/Photo-Camera.svg"
-								alt=""></label>
-						<span>Up to 1 MB (300x300 px)</span>
-					</div>
-					<a href="#" id="trash"><img src="../../images/Trash.svg" alt="trash"></a>
+				<form action="url" method="post"></form>
+					<h1>Profile</h1>
+					<div class="profile">
+						<img src="../../images/371fb92137b3492967f1388aeb36d05399feeafd.png" alt="user-photo"
+							id="user-photo">
+						<div class="upload">
+							<input type="file" id="custom-upload">
+							<label for="custom-upload" class="custom"><img src="../../images/Photo-Camera.svg"
+									alt=""></label>
+							<span>Up to 1 MB (300x300 px)</span>
+						</div>
+						<a href="#" id="trash"><img src="../../images/Trash.svg" alt="trash"></a>
 
-				</div>
-				<div class="name-mail">
-					<div class="user-data">
-						<label for="first-name">First Name</label>
-						<input type="text" name="first-name" id="first-name">
 					</div>
-					<div class="user-data">
-						<label for="mail">E-mail</label>
-						<input type="email" name="mail" id="mail" required
-							pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-					</div>
-				</div>
-				<div class="location-info">
-					<div class="location">
-						<label for="country">Country</label>
-						<select name="country" id="country">
-							<option value="select" selected disabled>select</option>
-							<option value="Ukraine">Ukraine</option>
-							<option value="France">France</option>
-							<option value="United Kingdom">United Kingdom</option>
-						</select>
-					</div>
-					<div class="location">
-						<label for="city">City</label>
-						<input type="text" name="city" id="city">
-					</div>
-				</div>
-				<div class="adress">
-					<div class="user-adress">
-						<div class="adress-data">
-							<label for="zip">Zip Code</label>
-							<input type="text" name="zip" id="zip" pattern="[0-9]{5}">
+					<div class="name-mail">
+						<div class="user-data">
+							<label for="first-name">First Name</label>
+							<input type="text" name="first-name" id="first-name">
 						</div>
-						<div class="adress-data">
-							<label for="phone">Phone Number</label>
-							<input type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+						<div class="user-data">
+							<label for="mail">E-mail</label>
+							<input type="email" name="mail" id="mail" required
+								pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
 						</div>
 					</div>
-					<div class="button">
-						<a href="../../../index.html">Update</a>
+					<div class="location-info">
+						<div class="location">
+							<label for="country">Country</label>
+							<select name="country" id="country">
+								<option value="select" selected disabled>select</option>
+								<option value="Ukraine">Ukraine</option>
+								<option value="France">France</option>
+								<option value="United Kingdom">United Kingdom</option>
+							</select>
+						</div>
+						<div class="location">
+							<label for="city">City</label>
+							<input type="text" name="city" id="city">
+						</div>
 					</div>
-				</div>
+					<div class="adress">
+						<div class="user-adress">
+							<div class="adress-data">
+								<label for="zip">Zip Code</label>
+								<input type="text" name="zip" id="zip" pattern="[0-9]{5}">
+							</div>
+							<div class="adress-data">
+								<label for="phone">Phone Number</label>
+								<input type="tel" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+							</div>
+						</div>
+						<button type="submit" class="button" formmethod="post">Update</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</main>
-	<footer></footer>
+	<footer><a href="../../../index.html">для переходу на першу сторінку</a></footer>
 </body>
 
 </html>

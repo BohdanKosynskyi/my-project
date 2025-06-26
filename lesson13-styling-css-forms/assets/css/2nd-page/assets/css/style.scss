@@ -12,17 +12,28 @@ $subtitle-color: #969696;
 $button-color: #007BFF;
 $button-text: #fff;
 
+body{
+	background: #F7F7F7;
+}
+
 .container {
 	width: min(90%, 1440px);
 	margin: 0 auto;
+	background-color: #F7F7F7;
+	padding-top: 55px;
 }
 
 .block {
 	max-width: 570px;
 	min-height: 590px;
 	margin: 0 auto;
-	box-shadow: 0 4px 16px;
 	padding: 35px 35px 16px;
+	background-color: $button-text;
+	font-family: 'Roboto Regular';
+	font-size: 0.9375rem;
+	font-weight: 400;
+	line-height: 1.375rem;
+	letter-spacing: -0.0125rem;
 }
 
 h1 {
@@ -75,12 +86,7 @@ input[type="file"]{
 
 span{
 	color: $subtitle-color;
-	font-family: 'Roboto Regular';
 	font-size: 0.8125rem;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.125rem;
-	letter-spacing: -0.00625rem;
 	margin-top: 9px;
 }
 
@@ -102,17 +108,10 @@ span{
 
 	.user-data label{
 		padding-bottom: 7px;
-		font-family: 'Roboto Regular';
-		font-size: 0.9375rem;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 1.375rem;
-		letter-spacing: -0.0125rem;
 		color: $text-color;
 	}
 
 	.user-data input{
-		font-family: 'Roboto Regular';
 		margin-top: 7px;
 		width: 245px;
 		border-radius: 5px;
@@ -142,9 +141,7 @@ span{
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-		gap: 0.4375rem;
-		flex-shrink: 0;
-		font-family: 'Roboto Regular';
+		gap: 7px;
 		color: $text-color;
 	}
 
@@ -166,17 +163,14 @@ span{
 		input[type='number'],
 		input[type="number"]:hover,
 		input[type="number"]:focus {
-    		appearance: none;
+			appearance: none;
 			margin: 0;
 	}
 	
-
 	.location select option {
 		color: $text-color;
 		font-family: 'Inter Regular';
 		font-size: 0.9375rem;
-		font-style: normal;
-		font-weight: 400;
 		line-height: 1.375rem;
 		letter-spacing: -0.0125rem;
 	}
@@ -194,19 +188,10 @@ span{
 
 .adress-data label {
 	padding-bottom: 7px;
-	font-family: 'Roboto Regular';
-	font-size: 0.9375rem;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.375rem;
-	letter-spacing: -0.0125rem;
 	color: $text-color;
-
-
 }
 
 .adress-data input {
-	font-family: 'Roboto Regular';
 	margin-top: 7px;
 	width: 245px;
 	border-radius: 5px;
@@ -214,27 +199,20 @@ span{
 	height: 38px;
 	border:1px solid $text-color;
 	&:focus{
-			border: 2px solid $button-color;
-			outline: none
+		border: 2px solid $button-color;
+		outline: none
 		}
 }
 
-.button a {
-	display: flex;
+button[type="submit"] {
 	background-color: $button-color;
-	width: 150px;
-	height: 38px;
-	justify-content: center;
-	align-items: center;
-	flex-shrink: 0;
-	color: $button-text;
-	font-family: 'Roboto Medium';
-	font-size: 0.9375rem;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 1.375rem;
-	letter-spacing: -0.00625rem;
-	text-decoration: none;
+	padding: 10px 20px;
+	border: none;
 	border-radius: 5px;
+	cursor: pointer;
+	font-family: 'Roboto Medium';
+	text-decoration: none;
+	width: 150px;
 	margin: 28px 0 20px;
+	color: $button-text;
 }
