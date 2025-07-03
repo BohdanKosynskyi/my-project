@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+$text-color: #000000;
+$logo-color: #1A1A1A;
+$text-beckground-color: #DADADA;
+
+@import 'fonts';
+
+body{
+	
+}
+
+.container {
+	width: min(95%, 1300px);
+	margin: 0 auto;
+	
+}
+
+.pseudo-heder {
+	display: flex;
+	height: 80px;
+	width: 100vw;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	font-family: 'PT Sans';
+	position: fixed;
+	background-color: #fff;
+	z-index: 1;
+	top: 0;
+
+	span:nth-child(1){
+		font-family: 'Tourney Expanded SemiBold';
+	}
+
+	span:nth-child(2), {
+		padding-left: 100px;
+		font-family: 'Staatliches regular';
+			a{
+			text-decoration: none;
+			margin-right: 600px;
+		}
+	}
+
+	a{
+		display: inline-block;	
+		color: $text-color;
+	}
+
+	img {
+		display: block;
+		color: $logo-color;
+	}
+}
+
+aside{
+	width: 30%;
+	float: left;
+	position: sticky;
+	top: 100px;
+	min-height: 100vh;
+	
+	
+	nav ul{
+		display: inline-block;
+	
+		li{
+		font-family: "Francois One";
+		font-size: 2.25rem;
+		font-weight: 400;
+		line-height: 3rem;
+		letter-spacing: 0.09rem;
+		text-transform: uppercase;
+		list-style: none;
+		padding-bottom: 70px;
+		text-align: left;
+		a{
+			display: block;
+			width: 100%;
+			text-decoration: none;
+			color: $text-color;
+			border-bottom: 1px solid #BDBDBD;
+		}
+	}
+	}
+}
+
+.main-part{
+	
+	margin-left: 30%;
+}
+
+.bg-image{
+	background-repeat: no-repeat;
+	position: fixed;
+	max-width: 1300px;
+	right: calc((100vw - 1300px)/2 - 74px);
+	pointer-events: none;
+	z-index: -1;
+}
+
+h3 {
+	font-family: "Francois One";
+	font-size: 2.25rem;
+	font-weight: 400;
+	line-height: 3rem;
+	letter-spacing: 0.09rem;
+	text-transform: uppercase;
+	margin:150px 0 40px;
+	position: relative;
+
+	scroll-margin-top: 120px;
+	&::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: -20px;
+		width: 100px;
+		height: 8px;
+		background: $text-color;
+	}
+}
+
+h3:not(:first-child) {
+	margin-top: 70px;
+}
+
+.chapter {
+	color: $text-color;
+	font-feature-settings: 'sups' on;
+	font-family: 'Farro';
+	font-size: 1.875rem;
+	font-weight: 300;
+	letter-spacing: 0.075rem;
+	bottom: 13px;
+	position: relative;
+	display: inline-block;
+	text-transform: capitalize
+}
+
+.text-part {
+	color: $text-color;
+	font-family: "PT Sans";
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 3rem;
+	display: block;
+
+	.underline {
+		text-decoration-line: underline;
+	}
+
+	.italic-text {
+		font-style: italic;
+	}
+
+	.bold-text {
+		font-weight: bold;
+	}
+
+	.bacground-text {
+		background-color: $text-beckground-color;
+
+	}
+}
+
+.spase-part{
+	margin-bottom: 40px;
+
+	&:last-child{
+		margin-bottom: 90px;
+	}
+}
+
+section{
+	margin-top: 70px;
+}
