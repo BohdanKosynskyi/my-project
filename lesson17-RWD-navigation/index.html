@@ -9,6 +9,29 @@
 </head>
 
 <body>
+	<div class="overlay"></div>
+	<div class="mobile-menu-panel">
+		<div class="mm-top">
+			<div class="logo">
+				<a href="assets/images/svg-files/manifest-logo.svg"></a>
+			</div>
+			<div class="hamburger">
+				<button type="button" class="close" onclick='closeMenu()'>
+					<span></span>
+				</button>
+			</div>
+		</div>
+		<nav class="mobile-menu">
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">works</a></li>
+					<li><a href="#">blog</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
+	</div>
+	<div class="page-wrapper">
 	<header>
 		<div class="header-container">
 			<div class="logo">
@@ -31,7 +54,7 @@
 					</svg></a>
 			</div>
 			<div class="hamburger">
-				<button type="button">
+				<button type="button" class="open" onclick='openMenu()'>
 					<span></span>
 				</button>
 			</div>
@@ -190,6 +213,20 @@
 			<span class="copyright">© Copyright Manifest Theme. Allrights reserved</span>
 		</div>
 	</footer>
+	</div>
+
+	<script>
+		function openMenu(){
+			document.querySelector('.overlay').classList.add('open')
+			document.querySelector('.mobile-menu-panel').classList.add('open')
+		}
+
+		function closeMenu(){
+			document.querySelector('.overlay').classList.remove('open')
+			document.querySelector('.mobile-menu-panel').classList.remove('open')
+		
+		}
+	</script>
 </body>
 
 </html>
