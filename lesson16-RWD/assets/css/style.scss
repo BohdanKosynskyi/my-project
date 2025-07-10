@@ -8,7 +8,7 @@ $sec-paragraph-color: #565656;
 *::before,
 *::after {
 	padding: 0;
-	outline: 1px solid red;
+	// outline: 1px solid red;
 	margin: 0;
 	box-sizing: border-box;
 }
@@ -135,6 +135,22 @@ nav ul {
 		&::after {
 			bottom: 7px;
 		}
+
+		&.close {
+			span {
+				display: none;
+			}
+
+			&::before {
+				top: 15px;
+				rotate: 45deg;
+			}
+
+			&::after {
+				top: 15px;
+				rotate: -45deg;
+			}
+		}
 	}
 }
 
@@ -251,7 +267,6 @@ h2 {
 	}
 
 	p a {
-		// margin-left: 906px;
 		text-decoration: none;
 		color: var(--Grey-500, #7B7B7B);
 		font-family: 'Lato-Regular';
@@ -268,10 +283,10 @@ h2 {
 
 	li img {
 		width: 100%;
-    height: 188px;
-    margin-bottom: 25px;
-    object-fit: cover;
-    object-position: center;
+		height: 188px;
+		margin-bottom: 25px;
+		object-fit: cover;
+		object-position: center;
 	}
 
 	li .li-group span {
@@ -319,12 +334,13 @@ h2 {
 }
 
 .most-popular ul {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	gap: 30px;
 	margin-bottom: 50px;
 
 	li img {
-		width: 590px;
+		width: 100%;
 		height: 260px;
 		margin-bottom: 20px;
 	}
@@ -498,6 +514,67 @@ footer {
 	}
 }
 
+.overlay {
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100dvh;
+	background-color: rgba(0, 0, 0, .7);
+	z-index: 100;
+
+	&.open {
+		visibility: visible;
+		opacity: 1;
+		transition: all 0.5s ease;
+	}
+}
+
+.mobile-menu-panel {
+	transition: all .5s ease;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 300px;
+	height: 100dvh;
+	background-color: #fff;
+	z-index: 101;
+	transform: translateX(-100%);
+
+	&.open {
+		transform: translateX(0);
+	}
+
+	.mm-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+	}
+}
+
+.mobile-menu {
+	ul {
+		display: flex;
+		flex-direction: column;
+		width: 30vw;
+		margin-left: 10px;
+
+		a {
+			display: inline-block;
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			font-size: 1.5rem;
+			text-decoration: none;
+		}
+	}
+
+}
+
+
 @media screen and (max-width: 768px) and (min-width: 321px) {
 
 	header .header-container {
@@ -596,27 +673,28 @@ footer {
 			}
 		}
 
-		.latest-zone ul{
+		.latest-zone ul {
 			flex-direction: column;
 
 
-			li{
+			li {
 				display: flex;
 				gap: 10px;
 
-				&:nth-child(2){
+				&:nth-child(2) {
 					flex-direction: row-reverse;
 				}
 
-				img{
+				img {
 					width: 48%;
 				}
 
-				.li-group span, p{
+				.li-group span,
+				p {
 					font-size: 2vw;
 				}
 
-				.li-group h4 a{
+				.li-group h4 a {
 					font-size: 4vw;
 				}
 			}
