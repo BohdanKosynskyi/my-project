@@ -971,11 +971,12 @@ footer {
 		}
 
 		.most-popular {
-			gap: 20px;
+			gap: 20px;		
 
 			ul {
+			display: flex;	
 				flex-direction: column;
-				display: grid;
+				
 
 				li {
 					img {
