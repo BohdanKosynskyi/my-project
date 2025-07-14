@@ -192,10 +192,8 @@ h2 {
 	flex-direction: row;
 	gap: 30px;
 	margin-bottom: 50px;
-
-	img {
-		width: 48%;
-		max-height: 470px;
+	>div{
+		width: 50%;
 	}
 }
 
@@ -235,7 +233,7 @@ h2 {
 	}
 
 	.paragraph {
-		margin-top: 50px;
+		margin-top: 40px;
 		color: $sec-paragraph-color;
 		font-family: 'Lato-Regular';
 		font-size: 1rem;
@@ -280,20 +278,37 @@ h2 {
 	display: flex;
 	gap: 45px;
 	margin-bottom: 90px;
+	// flex-wrap: wrap;
 
-	li img {
+	li {
+		flex: 1 1 calc(33.33% - 30px);
+		display: flex;
+		flex-direction: column;
+
+	.img-wrap-latest {
 		width: 100%;
-		height: 188px;
-		margin-bottom: 25px;
-		object-fit: cover;
-		object-position: center;
+		position: relative;
+		padding-top: 70%;
+		overflow: hidden;
+		margin-bottom: 20px;
+
+		img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		
 	}
 
-	li .li-group span {
+	.li-group span {
 		color: var(--Grey-500, #7B7B7B);
 		font-family: 'Lato-Regular';
 		font-size: 0.75rem;
 		letter-spacing: 0.075rem;
+
 
 		&.topic {
 			float: left;
@@ -304,7 +319,8 @@ h2 {
 			float: right;
 		}
 	}
-
+	
+}
 	.li-group h4 {
 		margin: 25px 0 20px;
 
@@ -625,12 +641,6 @@ footer {
 			display: flex;
 			gap: 20px;
 
-			img {
-				width: 48%;
-				height: auto;
-				object-fit: cover;
-			}
-
 			.main-section-inside {
 				height: 280px;
 				box-sizing: border-box;
@@ -641,11 +651,11 @@ footer {
 				}
 
 				time {
-					font-size: 2.25vw;
+					// font-size: 2.25vw;
 				}
 
 				p {
-					font-size: 2.25vw;
+					font-size: 2.5vw;
 					width: auto;
 				}
 
@@ -661,14 +671,16 @@ footer {
 			justify-content: space-between;
 
 			h3 {
-				font-size: 3vw;
+				font-size: 5vw;
 			}
 
 			p {
 				float: right;
+				font-size: 4vw;
 
 				a {
 					display: contents;
+					font-size: 4vw;
 				}
 			}
 		}
@@ -678,20 +690,25 @@ footer {
 
 
 			li {
-				display: flex;
-				gap: 10px;
+				flex-direction: row;
+				gap: 20px;
+
+				>div{
+					width: 50%;
+					padding-top: 10px;
+				}
 
 				&:nth-child(2) {
 					flex-direction: row-reverse;
 				}
 
 				img {
-					width: 48%;
+					object-fit: cover;
 				}
 
 				.li-group span,
 				p {
-					font-size: 2vw;
+					font-size: 3vw;
 				}
 
 				.li-group h4 a {
@@ -774,6 +791,83 @@ footer {
 
 	}
 }
+@media screen and (max-width: 400px) and (min-width: 321px) {
+.container {
+		
+		h2 {
+			font-size: 7.25vw;
+		}
+
+		.main-section {
+
+			.main-section-inside {
+				height: 330px;
+
+				h4 a {
+
+					font-size: 5.25vw;
+					letter-spacing: normal;
+				}
+
+				p {
+					font-size: 4vw;
+					margin-top: 10px;
+				}
+
+			}
+		}
+
+		.latest {
+
+			p {
+				a {
+					display: contents;
+					font-size: 4vw;
+				}
+			}
+		}
+
+		.latest-zone ul {
+
+			li {
+				.li-group span,
+				p {
+					font-size: 4.5vw;
+				}
+
+				time{
+					font-size: 3vw;
+				}
+
+				.li-group h4 a {
+					font-size: 5vw;
+				}
+			}
+		}
+
+		.most-popular {
+			gap: 20px;
+
+			ul li {
+				img {
+					max-height: 160px;
+					max-width: 320px;
+					object-fit: cover;
+					width: 100%;
+
+					.topic {
+						font-size: 2vw;
+					}
+
+					.time {
+						font-size: 1.5vw;
+					}
+				}
+			}
+		}
+	}
+}
+		
 
 @media screen and (max-width: 320px) and (min-width: 120px) {
 	header .header-container {
@@ -824,27 +918,31 @@ footer {
 			display: flex;
 			flex-direction: column-reverse;
 
-			img {
+			>div{
 				width: 100%;
-				height: auto;
-				object-fit: cover;
-				margin-bottom: 0;
 			}
+
+			// img {
+			// 	width: 100%;
+			// 	height: auto;
+			// 	object-fit: cover;
+			// 	margin-bottom: 0;
+			// }
 
 			.main-section-inside {
 				height: 280px;
 				box-sizing: border-box;
 
 				h4 a {
-					font-size: 3.25vw;
+					font-size: 6vw;
 				}
 
 				time {
-					font-size: 2.25vw;
+					font-size: 4vw;
 				}
 
 				p {
-					font-size: 4.25vw;
+					font-size: 5vw;
 					width: auto;
 				}
 
@@ -892,10 +990,12 @@ footer {
 		}
 
 		.most-popular {
-			gap: 20px;
+			gap: 20px;		
 
 			ul {
+			display: flex;	
 				flex-direction: column;
+				
 
 				li {
 					img {
@@ -961,6 +1061,12 @@ footer {
 				font-size: 1rem;
 				margin-left: 0;
 				padding-right: 0;
+
+				li a svg{
+					width: 35px;
+					height: 35px;
+					padding: 5px;
+				}	
 			}
 		}
 	}
