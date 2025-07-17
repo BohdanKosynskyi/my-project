@@ -30,8 +30,8 @@ button {
 
 img {
 	vertical-align: top;
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
+	height: auto;
 	object-fit: cover;
 }
 
@@ -110,7 +110,7 @@ body {
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100dvh;
+	min-height: 100svh;
 	background-color: rgba(0, 0, 0, .7);
 	z-index: 100;
 
@@ -126,8 +126,8 @@ body {
 	position: fixed;
 	left: 0;
 	top: 0;
-	width: 300px;
-	height: 100dvh;
+	width: min(80vw, 300px);
+	min-height: 100svh;
 	background-color: $header-color;
 	z-index: 101;
 	transform: translateX(-100%);
@@ -152,7 +152,9 @@ body {
 	ul {
 		display: flex;
 		flex-direction: column;
-		width: 30vw;
+		width: 100%;
+		padding-inline: 1rem;
+		text-align: left;
 		margin-left: 10px;
 
 		a {
@@ -174,7 +176,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100dvh;
+	min-height: 100svh;
 	text-align: center;
 	background-image: url(../images/retina/headerbackground.webp);
 	background-size: cover;
@@ -308,13 +310,14 @@ header{
 .choose{
 	background-image: url(../images/retina/whybackground.webp);
 	background-size: 100% 100%;
-	height: 100dvh;
+	min-height: 100svh;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	.container .choose-div{
 		
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		gap: 60px;
@@ -400,6 +403,7 @@ header{
 
 	.icon-bar{
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-between;
 		position: relative;
@@ -457,7 +461,7 @@ header{
 .country-card{
 	background-image: url(../images/retina/spain-villa.webp);
 	background-size: 100% 100%;
-	height: 100dvh;
+	min-height: 100svh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -534,7 +538,7 @@ header{
 
 .feedback{
 	background-image: url(../images/retina/bg.webp);
-	height: 80dvh;
+	min-height: 80svh;
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -552,6 +556,7 @@ header{
 
 	.user-feedback{
 		display: flex;
+		flex-wrap: wrap;
 
 		.user-photo{
 			width: 34%;
@@ -705,11 +710,12 @@ footer {
 	}
 
 	.choose{
-	height: 67dvh;
+	min-height: 67svh;
 
 	.container .choose-div{
 		
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: space-between;
@@ -757,7 +763,7 @@ footer {
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
-			height: 58dvh;
+			min-height: 58svh;
 		
 			.card{
 				margin-top: 120px;
@@ -766,7 +772,7 @@ footer {
 	}
 
 	.feedback{
-		height: 90dvh;
+		min-height: 90svh;
 		h2{
 			padding-top: 60px;
 		}
@@ -826,7 +832,7 @@ footer {
 
 }
 	.choose{
-		height: 67dvh;
+		min-height: 67svh;
 
 		.container .choose-div{
 			gap: 37px;
@@ -877,7 +883,7 @@ footer {
 	}
 
 	.feedback{
-		height: 100dvh;
+		min-height: 100svh;
 		h2{
 			padding-top: 60px;
 		}
