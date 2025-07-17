@@ -317,7 +317,7 @@ header{
 	.container .choose-div{
 		
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		gap: 60px;
@@ -403,7 +403,7 @@ header{
 
 	.icon-bar{
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-between;
 		position: relative;
@@ -753,7 +753,7 @@ footer {
 		}
 
 		.icon-box{	
-			width: 400px;
+			max-width: 350px;
 			margin: 60px 0;
 		}
 	}
