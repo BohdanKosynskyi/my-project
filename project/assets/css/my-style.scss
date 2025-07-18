@@ -103,6 +103,7 @@ body {
 		}
 	}
 }
+
 .overlay {
 	visibility: hidden;
 	opacity: 0;
@@ -142,7 +143,7 @@ body {
 		justify-content: space-between;
 		padding: 20px;
 
-		.logo{
+		.logo {
 			width: 60%;
 		}
 	}
@@ -182,23 +183,23 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	.logo{
+	.logo {
 		margin-top: 200px;
 		width: 300px;
 		height: 52px;
-		
+
 		img {
-		width: 100%;
-		height: auto;
-		margin-bottom: 24px;
+			width: 100%;
+			height: auto;
+			margin-bottom: 24px;
 		}
 	}
 
-	.slogan{
+	.slogan {
 		font-family: 'JosefinSans-Regular';
 		color: $text-color;
 		display: block;
-    	text-align: center;
+		text-align: center;
 		font-size: 1.375rem;
 		font-weight: 400;
 		line-height: 1.75rem;
@@ -243,20 +244,20 @@ body {
 		}
 	}
 
-	p{
+	p {
 		display: block;
-    	text-align: center;
+		text-align: center;
 		font-size: 0.875rem;
 		line-height: 1.25rem;
 		letter-spacing: 0.175rem;
 
-		a{
+		a {
 			text-decoration: none;
 			color: $text-color;
 		}
 	}
 
-	svg{
+	svg {
 		width: 14px;
 		height: 16px;
 		color: $text-color;
@@ -265,31 +266,31 @@ body {
 	}
 }
 
-header{
+header {
 	width: 100%;
 	position: sticky;
 	top: 0;
 	background-color: $header-color;
 	z-index: 1;
-	
 
-	.container{
-		
+
+	.container {
+
 		display: flex;
 		height: 84px;
 		align-items: center;
-    	justify-content: space-between;
+		justify-content: space-between;
 	}
 
-	.logo{
+	.logo {
 		width: 168px;
 		height: 20px;
 	}
 
-	nav ul{
+	nav ul {
 		display: flex;
-		
-		li{
+
+		li {
 			margin: 0 20px;
 			font-family: 'Aleo-Regular';
 			font-size: 0.875rem;
@@ -298,7 +299,7 @@ header{
 			letter-spacing: 0.0875rem;
 			text-transform: uppercase;
 
-			a{
+			a {
 				text-decoration: none;
 				color: $text-color;
 			}
@@ -307,7 +308,7 @@ header{
 
 }
 
-.choose{
+.choose {
 	background-image: url(../images/retina/whybackground.webp);
 	background-size: 100% 100%;
 	min-height: 80svh;
@@ -315,18 +316,19 @@ header{
 	background-size: cover;
 	background-position: bottom;
 
-	.container .choose-div{
-		
+	.container .choose-div {
+
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 60px;
-		
 
-		.content{
+
+		.content {
 			width: 50%;
 			margin: 124px 0;
-			h2{
+
+			h2 {
 				color: $text-color;
 				font-family: 'Aleo-Regular';
 				font-size: 2.25rem;
@@ -336,13 +338,14 @@ header{
 				font-weight: 200;
 			}
 
-			.choose-info{
+			.choose-info {
 				color: $text-color;
 				font-family: 'JosefinSans-Light';
 				line-height: 1.75rem;
 				letter-spacing: 0.1rem;
 				margin-bottom: 32px;
 			}
+
 			a {
 				margin-top: 32px;
 				text-decoration: none;
@@ -363,46 +366,46 @@ header{
 					background-position: left center;
 				}
 			}
-			
+
 		}
 
-		.content-img{
+		.content-img {
 			display: flex;
 			flex-direction: column;
 			gap: 16px;
 			margin: 124px 0;
 
 			.content-img1,
-			.content-img2{
+			.content-img2 {
 				width: 60%;
 				height: auto;
 
-				img{
+				img {
 					width: 100%;
 					height: auto;
-					object-fit:cover;
+					object-fit: cover;
 					object-position: center;
 				}
 			}
 
-			.content-img2{
+			.content-img2 {
 				align-self: flex-end;
 			}
 		}
 	}
 }
 
-.emoji{
+.emoji {
 	background-color: #333;
 
-	.icon-bar{
+	.icon-bar {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		position: relative;
-		
-		
-		.line{
+
+
+		.line {
 			width: 33%;
 			height: 140px;
 			border: 2px dashed $text-color;
@@ -411,31 +414,31 @@ header{
 			border-bottom: none;
 			border-left: none;
 			border-right: none;
-			position:absolute;
+			position: absolute;
 			top: 50px;
 			left: 15%;
 		}
 
-		.line2{
+		.line2 {
 			left: 52%;
 		}
 
-		.icon-box{
+		.icon-box {
 			display: flex;
 			flex-direction: column;
 			margin: 120px 0 45px;
 			width: 30%;
 			align-items: center;
-			
-			
-			svg{
+
+
+			svg {
 				width: 64px;
 				height: 64px;
 				color: $header-color;
 				margin-bottom: 20px;
 			}
 
-			h4{
+			h4 {
 				text-align: center;
 				color: $text-color;
 				font-family: 'Aleo-Regular';
@@ -444,14 +447,14 @@ header{
 				text-transform: capitalize;
 			}
 
-			.icon-red{
+			.icon-red {
 				color: #FF6363;
 			}
 		}
 	}
 }
 
-.country-card{
+.country-card {
 	background-image: url(../images/retina/spain-villa.webp);
 	background-size: 100% 100%;
 	min-height: 80svh;
@@ -459,7 +462,7 @@ header{
 	background-size: cover;
 	display: flex;
 
-	.card{
+	.card {
 		width: 50%;
 		display: flex;
 		flex-direction: column;
@@ -468,7 +471,7 @@ header{
 		background-color: rgba($color: #000000, $alpha: .7);
 
 
-		span{
+		span {
 			color: $text-color;
 			font-family: 'JosefinSans-Light';
 			font-size: 1.25rem;
@@ -476,7 +479,7 @@ header{
 			letter-spacing: 0.125rem;
 		}
 
-		h4{
+		h4 {
 			color: $text-color;
 			font-family: 'JosefinSans-Regular';
 			font-size: 1.25rem;
@@ -485,53 +488,54 @@ header{
 			font-weight: 200;
 		}
 
-		p{
+		p {
 			color: $text-color;
 			font-family: 'JosefinSans-Light';
 			line-height: 1.75rem;
 			letter-spacing: 0.1rem;
 			margin-bottom: 24px;
 		}
-			a {
-				margin-top: 32px;
-				text-decoration: none;
-				color: $text-color;
-				text-align: center;
-				align-items: center;
-				justify-content: center;
-				display: flex;
-				width: 213px;
-				height: 61px;
-				text-transform: uppercase;
-				background: linear-gradient(45deg, #486BFE 70%, #5373FD 70%);
-				background-size: 200% 200%;
-				background-position: right center;
-				transition: all 0.5s ease-in-out;
 
-				&:hover {
-					background-position: left center;
-				}
+		a {
+			margin-top: 32px;
+			text-decoration: none;
+			color: $text-color;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			width: 213px;
+			height: 61px;
+			text-transform: uppercase;
+			background: linear-gradient(45deg, #486BFE 70%, #5373FD 70%);
+			background-size: 200% 200%;
+			background-position: right center;
+			transition: all 0.5s ease-in-out;
+
+			&:hover {
+				background-position: left center;
 			}
+		}
 	}
 }
 
-.country-second-card{
+.country-second-card {
 	background-image: url(../images/retina/spain-mountains.webp);
 
-	.card{
+	.card {
 		float: right;
 	}
 }
 
-.feedback{
+.feedback {
 	background-image: url(../images/retina/bg.webp);
 	min-height: 80svh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 60%;
-	
 
-	h2{
+
+	h2 {
 		color: $text-color;
 		text-align: center;
 		font-family: 'Aleo-Regular';
@@ -543,20 +547,20 @@ header{
 		font-weight: 200;
 	}
 
-	.user-feedback{
+	.user-feedback {
 		display: flex;
 		flex-wrap: wrap;
 		padding-bottom: 180px;
 
-		.user-photo{
+		.user-photo {
 			width: 34%;
 		}
 
-		.user-quote{
+		.user-quote {
 			width: 66%;
 			background-color: #333;
 
-			span{
+			span {
 				color: $text-color;
 				font-family: 'JosefinSans-Regular';
 				font-size: 1.25rem;
@@ -566,14 +570,15 @@ header{
 				margin: 48px 60px 0;
 			}
 
-			p{
+			p {
 				color: $text-color;
 				font-family: 'JosefinSans-Light';
 				line-height: 1.75rem;
 				letter-spacing: 0.1rem;
 				margin: 16px 60px 48px;
-				svg{
-				    width: 20px;
+
+				svg {
+					width: 20px;
 					height: 20px;
 					color: $header-color;
 				}
@@ -613,88 +618,117 @@ footer {
 		margin-bottom: 20px;
 	}
 
-	nav ul{
+	nav ul {
 		display: flex;
 
 		li a {
 
-			svg{
-			width: 32px;
-			height: 32px;
-			margin: 0 15.5px;
-			color: $text-color;
+			svg {
+				width: 32px;
+				height: 32px;
+				margin: 0 15.5px;
+				color: $text-color;
 
-			&:hover{
-				color: $header-color;
+				&:hover {
+					color: $header-color;
+				}
+
 			}
-
-		}
 		}
 	}
 }
 
 @media screen and (max-width: 1024px) {
-	
 
-.hero-section {
-	background-position: right;
 
-	.search-button {
-		width: 63%;
+	.hero-section {
+		background-position: right;
+
+		.search-button {
+			width: 63%;
+		}
 	}
-}
-	
-	.choose{
+
+	.choose {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom;
 		min-height: 70svh;
 
-		.container .choose-div{
+		.container .choose-div {
 
-			.content{
+			.content {
 				width: 61%;
 			}
 
-			.content-img{
+			.content-img {
 				width: 39%;
 			}
 		}
 	}
 
-	.country-card{
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-		
-			.card{
+	.country-card {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		.card {
 			width: 60%;
 		}
 	}
 
-	.feedback .container .user-feedback .user-photo picture img{
+	.feedback .container .user-feedback .user-photo picture img {
 		height: 100%;
 
 	}
 
-}	
+}
 
 @media screen and (max-width: 768px) {
 
+	span,
+	p {
+		font-size: 1.5rem;
+	}
+
 	.hero-section {
 		background-position: 40% 20%;
+
+		.search-button {
+			width: 60%;
+
+			button {
+				span {
+					display: none;
+				}
+			}
+
+			input {
+				padding: 20px 60px 20px 20px;
+				font-family: 'JosefinSans-Regular';
+				font-size: 0.775rem;
+			}
+
+			.search-btn {
+				width: 45px;
+				height: 45px;
+				justify-content: center;
+				align-items: center;
+				padding: 0;
+			}
+		}
 	}
 
 	header .container {
 		width: 100%;
 		justify-content: space-around;
 
-		.logo{
+		.logo {
 			float: left;
 		}
 	}
 
-	header .container .navigation nav{
+	header .container .navigation nav {
 		display: none;
 	}
 
@@ -704,197 +738,211 @@ footer {
 		}
 	}
 
-	.choose{
-	min-height: 67svh;
+	.choose {
+		min-height: 67svh;
 
-	.container .choose-div{
-		
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column-reverse;
-		align-items: center;
-		justify-content: space-between;
-		gap: 60px;
+		.container .choose-div {
 
-		.content{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+			align-items: center;
+			justify-content: space-between;
+			gap: 60px;
+
+			.content {
 				width: 100%;
 				display: block;
 				margin: 0;
 				text-align: center;
 
-				a{
+				a {
 					margin: 24px auto 60px;
 				}
-		}
+			}
 
-		.content-img{
-			display: flex;
-			flex-direction: row;
-			width: 100%;
-			margin: 60px 0 0;
-		}
-	}
-}
-
-	.emoji{
-		
-	.icon-bar{
-		flex-direction: column;
-		align-items: center;
-		
-		
-		.line{
-			display: none;
-		}
-
-		.icon-box{	
-			max-width: 350px;
-			margin: 60px 0;
-		}
-	}
-}
-
-	.country-card{
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			min-height: 40svh;
-		
-			.card{
-				margin: 120px auto;
+			.content-img {
+				display: flex;
+				flex-direction: row;
 				width: 100%;
+				margin: 60px 0 0;
+			}
 		}
 	}
 
-	.feedback{
+	.emoji {
+
+		.icon-bar {
+			flex-direction: column;
+			align-items: center;
+
+
+			.line {
+				display: none;
+			}
+
+			.icon-box {
+				max-width: 350px;
+				margin: 60px 0;
+			}
+		}
+	}
+
+	.country-card {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		min-height: 40svh;
+
+		.card {
+			margin: 120px auto;
+			width: 100%;
+
+			span {
+				font-size: 1.7rem;
+				margin-bottom: 15px;
+			}
+
+			h4 {
+				font-size: 1.9rem;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.feedback {
 		min-height: 90svh;
-		h2{
+
+		h2 {
 			padding-top: 60px;
 		}
 
-		.user-feedback{
+		.user-feedback {
 			flex-direction: column;
-		
-		.user-photo{
-			width: 100%;
-		}
 
-		.user-quote{
-			width: 100%;
+			.user-photo {
+				width: 100%;
+			}
+
+			.user-quote {
+				width: 100%;
+
+				span {
+					font-size: 1.7rem;
+				}
+			}
 		}
 	}
 }
-}
 
 @media screen and (max-width: 576px) {
+
+	span,
+	p {
+		font-size: 1.5rem;
+	}
+
 	.hero-section {
 
-		.logo{
+		.logo {
 			margin-top: 0;
 			width: 250px;
 			height: 52px;
-			
+
 		}
 
-		.slogan{
+		.slogan {
 			font-size: 1.175rem;
 			letter-spacing: 0.41625rem;
 		}
 
 		.search-button {
 			width: 90%;
-
-			button{
-				span{
-					display: none;
-				}
-			}
-
-		input {
-			padding: 20px 60px 20px 20px;
-			font-family: 'JosefinSans-Regular';
-			font-size: 0.775rem;
 		}
 
-		.search-btn {
-			width: 45px;
-			height: 45px;
-			justify-content: center;
-			align-items: center;
-			padding: 0;
-		}
 	}
 
-}
-	.choose{
+	.choose {
 		min-height: 67svh;
 		background-position: 70% 70%;
 
-		.container .choose-div{
+		.container .choose-div {
 			gap: 37px;
 
-			.content{
+			.content {
 				width: 100%;
 				display: block;
 				margin: 0;
 				text-align: center;
 
-				h2{
-				font-size: 2rem;
-				line-height: 2.5rem;
-				
+				h2 {
+					font-size: 2rem;
+					line-height: 2.5rem;
+
 				}
 
-			.choose-info{
-				font-size: 0.9rem;
-				letter-spacing: 0;
-			}
-		}
-	}
-}
-
-		.emoji{
-			
-			.icon-bar{
-				flex-direction: column;
-				align-items: center;
-				
-				
-				.line{
-					display: none;
-				}
-
-				.icon-box{	
-					width: 400px;
-					margin: 60px 0;
+				.choose-info {
+					letter-spacing: 0;
 				}
 			}
 		}
+	}
 
-	.country-card{
-			.card{
-				margin-top: 90px;
-				width: 100%;
+	.emoji {
+
+		.icon-bar {
+			flex-direction: column;
+			align-items: center;
+
+
+			.line {
+				display: none;
+			}
+
+			.icon-box {
+				width: 400px;
+				margin: 60px 0;
+			}
 		}
 	}
 
-	.feedback{
+	.country-card {
+		.card {
+			margin-top: 90px;
+			width: 100%;
+
+			span {
+				font-size: 1.7rem;
+				margin-bottom: 15px;
+			}
+
+			h4 {
+				font-size: 1.9rem;
+				margin-bottom: 20px;
+			}
+
+
+		}
+	}
+
+	.feedback {
 		min-height: 100svh;
-		h2{
+
+		h2 {
 			padding-top: 60px;
 		}
 
-		.user-feedback{
+		.user-feedback {
 			flex-direction: column;
-		
-		.user-photo{
-			width: 100%;
-			height: 100%;
-		}
 
-		.user-quote{
-			width: 100%;
+			.user-photo {
+				width: 100%;
+				height: 100%;
+			}
+
+			.user-quote {
+				width: 100%;
+			}
 		}
 	}
-}
 }
