@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /admin/
+Disallow: /logs.txt/
+
+Sitemap: https://bohdankosynskyi.github.io/my-project/sitemaps.xml
+
+Host: https://bohdankosynskyi.github.io/my-project/
