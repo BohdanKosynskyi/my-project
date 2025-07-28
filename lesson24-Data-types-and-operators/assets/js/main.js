@@ -16,7 +16,7 @@ function plusSecond(){
 // Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.
 function usb(){
 	const usbCapacity = prompt('Введіть обсяг флешки')
-	const qty = ((usbCapacity * 1024) / 820).toFixed(0)
+	const qty = Math.floor((usbCapacity * 1024) / 820).toFixed(0)
 	alert('Ваша флешка може вмістити ' + qty + ' файлів')
 }
 
