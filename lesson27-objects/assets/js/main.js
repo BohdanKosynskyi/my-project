@@ -7,32 +7,51 @@ const car = {
 	avgFuelConsumption: 9,
 	drivers: ['Bohdan', 'Theo'],
 
+	carInfo: function () {
+		return `Brand: ${this.brand}<br>
+			Model: ${this.model}<br>
+			Year: ${this.year}<br>
+			Average speed: ${this.avgSpeed} km/h<br>
+			Fuel capacity: ${this.fuelCapacity} liters<br>
+			Average fuel Consumption: ${this.avgFuelConsumption} l/100km<br>
+			Drivers: ${this.drivers.join(', ')}`;
+	},
+
+	addDriver: function () {
+		let input = document.getElementById('driverName');
+		let name = input.value.trim();
+
+		if (name) {
+			this.drivers.push(name);
+			input.value = '';
+			this.showCarInfo();
+		}
+	},
+
+	showCarInfo: function () {
+		document.getElementById("car-info").innerHTML = this.carInfo();
+	},
+
+	checkDriver: function () {
+		document.getElementById("check-driver").innerHTML = this.checkDriver();
+	}
 };
 
-function carInfo() {
-	alert(`Brand: ${car.brand}, Model: ${car.model}, Year: ${car.year},
-Averege speed: ${car.avgSpeed} km/h, Fuel capacity: ${car.fuelCapacity} liters, Averege fuel Consumption: ${car.avgFuelConsumption} l/100km, Drivers: ${car.drivers.join(', ')}`);
-}
 
-function addDriver() {
-	let input = document.getElementById('driverName')
-	let name = input.value.trim()
 
-	if (name) {
-		car.drivers.push(name)
-		alert(`Driver ${name} added. Full drivers list are: ${car.drivers.join(', ')}`)
-		input.value = ''
-	}
-}
 
 function checkDriver() {
-	let input = document.getElementById('checkDriver')
-	let name = input.value.trim()
+	let input = document.getElementById('checkDriver');
+	let name = input.value.trim();
 
-	if (car.drivers.includes(name)) {
-		alert(`${name} is in the list`);
-	} else {
-		alert(`${name} is not in the list`);
+	if (name) {
+		if (car.drivers.includes(name)) {
+			document.getElementById("driver-info").innerHTML = 
+				`Driver ${name} is in the list`;
+		} else {
+			document.getElementById("driver-info").innerHTML = 
+				`Driver ${name} is not in the list`;
+		}
 	}
 }
 
@@ -42,10 +61,12 @@ function checkTime() {
 	const time = distance / car.avgSpeed;
 	const breaks = Math.floor(time / 4);
 	const totalTime = time + breaks;
-	alert(`Загальний час у дорозі буде ${totalTime.toFixed(2)} години`);
+	document.getElementById("check-time").innerHTML = 
+	`Total time on the trip will be ${totalTime.toFixed(2)} hours`;
 
 	let fuel = (car.avgFuelConsumption * distance) / 100;
-	alert(`Для подолання ${distance} км, ви витратите ${fuel} літрів палива`);
+	document.getElementById("check-time").innerHTML = 
+	`For ${distance} km you will spend ${fuel} liters`;
 	input.value = ''
 }
 
@@ -87,42 +108,42 @@ function addHour() {
 
 function plus() {
 	const exampleOne = {
-		numerator: +prompt('Введіть верхню частину першого дробу'),
-		denominator: +prompt('Введіть нижню частину першого дробу')
+		numerator: +document.getElementById('numerator1').value,
+		denominator: +document.getElementById('denominator1').value
 	}
 	const exampleTwo = {
-		numerator: +prompt('Введіть верхню частину другого дробу'),
-		denominator: +prompt('Введіть нижню частину другого дробу')
+		numerator: +document.getElementById('numerator2').value,
+		denominator: +document.getElementById('denominator2').value
 	}
 	const numSumPlus = exampleOne.numerator * exampleTwo.denominator + exampleTwo.numerator * exampleOne.denominator
 	const denumSumPlus = exampleOne.denominator * exampleTwo.denominator
 
-	alert(`Сума дробів ${exampleOne.numerator}/${exampleOne.denominator} та ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${numSumPlus}/${denumSumPlus}`)
-
+	document.getElementById("answer").innerHTML = `Сума дробів ${exampleOne.numerator}/${exampleOne.denominator} та ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${(numSumPlus).toFixed(0)}/${(denumSumPlus).toFixed(0)}`;
 }
+
 function minus() {
 	const exampleOne = {
-		numerator: +prompt('Введіть верхню частину першого дробу'),
-		denominator: +prompt('Введіть нижню частину першого дробу')
+		numerator: +document.getElementById('numerator1').value,
+		denominator: +document.getElementById('denominator1').value
 	}
 	const exampleTwo = {
-		numerator: +prompt('Введіть верхню частину другого дробу'),
-		denominator: +prompt('Введіть нижню частину другого дробу')
+		numerator: +document.getElementById('numerator2').value,
+		denominator: +document.getElementById('denominator2').value
 	}
 	const numSumMinus = exampleOne.numerator * exampleTwo.denominator - exampleTwo.numerator * exampleOne.denominator
 	const denumSumMinus = exampleOne.denominator * exampleTwo.denominator
 
-	alert(`Віднімання дробів ${exampleOne.numerator}/${exampleOne.denominator} від ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${numSumMinus}/${denumSumMinus}`)
+	document.getElementById("answer").innerHTML = `Віднімання дробів ${exampleOne.numerator}/${exampleOne.denominator} від ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${(numSumMinus).toFixed(0)}/${(denumSumMinus).toFixed(0)}`
 }
 
 function multiply() {
 	const exampleOne = {
-		numerator: +prompt('Введіть верхню частину першого дробу'),
-		denominator: +prompt('Введіть нижню частину першого дробу')
+		numerator: +document.getElementById('numerator1').value,
+		denominator: +document.getElementById('denominator1').value
 	}
 	const exampleTwo = {
-		numerator: +prompt('Введіть верхню частину другого дробу'),
-		denominator: +prompt('Введіть нижню частину другого дробу')
+		numerator: +document.getElementById('numerator2').value,
+		denominator: +document.getElementById('denominator2').value
 	}
 	let numMultiple = exampleOne.numerator * exampleTwo.numerator
 	let denMultiple = exampleOne.denominator * exampleTwo.denominator
@@ -134,17 +155,17 @@ function multiply() {
 	numMultiple = numMultiple / divisor
 	denMultiple = denMultiple / divisor
 
-	alert(`Множення дробів ${exampleOne.numerator}/${exampleOne.denominator} та ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${numMultiple / denMultiple}`)
+	document.getElementById("answer").innerHTML = `Множення дробів ${exampleOne.numerator}/${exampleOne.denominator} та ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${(numMultiple).toFixed(0)} / ${(denMultiple).toFixed(0)}`
 }
 
 function devide() {
 	const exampleOne = {
-		numerator: +prompt('Введіть верхню частину першого дробу'),
-		denominator: +prompt('Введіть нижню частину першого дробу')
+		numerator: +document.getElementById('numerator1').value,
+		denominator: +document.getElementById('denominator1').value
 	}
 	const exampleTwo = {
-		numerator: +prompt('Введіть верхню частину другого дробу'),
-		denominator: +prompt('Введіть нижню частину другого дробу')
+		numerator: +document.getElementById('numerator2').value,
+		denominator: +document.getElementById('denominator2').value
 	}
 	const recNum = exampleTwo.denominator
 	const recDen = exampleTwo.numerator
@@ -159,17 +180,17 @@ function devide() {
 	numDev = numDev / divisorDevide
 	denDev = denDev / divisorDevide
 
-	alert(`Ділення дробів ${exampleOne.numerator}/${exampleOne.denominator} та ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${numDev / denDev}`)
+	document.getElementById("answer").innerHTML = `Ділення дробів ${exampleOne.numerator}/${exampleOne.denominator} та ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${(numDev).toFixed(0)} / ${(denDev).toFixed(0)}`
 }
 
 function pruning() {
 	const exampleOne = {
-		numerator: +prompt('Введіть верхню частину першого дробу'),
-		denominator: +prompt('Введіть нижню частину першого дробу')
+		numerator: +document.getElementById('numerator1').value,
+		denominator: +document.getElementById('denominator1').value
 	}
 	const exampleTwo = {
-		numerator: +prompt('Введіть верхню частину другого дробу'),
-		denominator: +prompt('Введіть нижню частину другого дробу')
+		numerator: +document.getElementById('numerator2').value,
+		denominator: +document.getElementById('denominator2').value
 	}
 
 	function nsd(a, b) {
@@ -183,5 +204,5 @@ function pruning() {
 	exampleTwo.numerator /= divisorLeftTwo
 	exampleTwo.denominator /= divisorLeftTwo
 
-	alert(`Скорочення дробів ${exampleOne.numerator}/${exampleOne.denominator} буде ${exampleOne.numerator / exampleOne.denominator} та ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${(exampleTwo.numerator / exampleTwo.denominator).toFixed(2)}`)
+	document.getElementById("answer").innerHTML = `Скорочення дробів ${exampleOne.numerator}/${exampleOne.denominator} буде ${exampleOne.numerator / exampleOne.denominator} та ${exampleTwo.numerator}/${exampleTwo.denominator} буде ${(exampleTwo.numerator).toFixed(0)} / ${(exampleTwo.denominator).toFixed(0)}`
 }

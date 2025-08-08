@@ -19,15 +19,18 @@
 		переданої відстані з середньою швидкістю. Враховуй, що
 		через кожні 4 години дороги водієві необхідно робити
 		перерву на 1 годину.Напиши всі можливі варіанти створення функцій.</span>
-	<button onclick="carInfo()">Car information</button>
+	<button onclick="car.showCarInfo()">Show Car Info</button>
+	<input type="text" id="driverName" placeholder="Enter driver name">
+	<button onclick="car.addDriver()">Add Driver</button>
 	<div class="inp">
-		<input type="text" id="driverName" placeholder="Enter driver name">
-		<button onclick="addDriver()">Add driver</button>
 		<input type="text" id="checkDriver" placeholder="Check driver name">
 		<button onclick="checkDriver()">Check driver</button>
 		<input type="text" id="checkTime" placeholder="Check time">
 		<button onclick="checkTime()">Check time to trip</button>
 	</div>
+	<div id="car-info"></div>
+	<div id="driver-info"></div>
+	<div id="check-time"></div>
 	<hr>
 	<span>Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
 		Для виведення часу на екран.
@@ -37,18 +40,35 @@
 		Враховуйте, що в останніх 3-х функціях, при зміні однієї частини часу, може змінитися і інша. Наприклад: якщо до
 		часу «20:59:45» додати 30 секунд, то повинно вийти «21:00:15», а не «20:59:75». Також потрібно передбачити
 		можливість того що користувач може передати 150 секунд, або 75 хвилин.</span>
-		<div id="clock"></div>
+	<div id="clock"></div>
 	<button onclick="addSec()">Add seconds</button>
 	<button onclick="addMin()">Add minutes</button>
 	<button onclick="addHour()">Add hours</button>
 	<br>
 	<hr>
 	<span>Створи об'єкт, що описує звичайний дріб. Створи об'єкт, який має методи роботи з дробом:
+	<div class="object">
+		<div class="first">
+			<input type="text" id="numerator1" placeholder="Чисельник 1">
+		</div>
+		<div class="first-one">
+			<input type="text" id="denominator1" placeholder="Знаменник 1">
+		</div>
+	</div>
+	<div class="object">
+		<div class="second">
+			<input type="text" id="numerator2" placeholder="Чисельник 2">
+		</div>
+		<div class="second-one">
+			<input type="text" id="denominator2" placeholder="Знаменник 2">
+		</div>
+	</div> <br>
 		<button onclick="plus()">Складання 2-х об'єктів-дробів.</button>
 		<button onclick="minus()">Віднімання 2-х об'єктів-дробів.</button>
 		<button onclick="multiply()">Множення 2-х об'єктів-дробів.</button>
 		<button onclick="devide()">Ділення 2-х об'єктів-дробів.</button>
 		<button onclick="pruning()">Скорочення об'єкта-дробу.</button>
+	<div id="answer"></div>
 </body>
 
 </html>
