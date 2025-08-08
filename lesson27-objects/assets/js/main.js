@@ -10,8 +10,8 @@ const car = {
 };
 
 function carInfo() {
-	alert(`Brand: ${car.brand}, Model: ${car.model}, Year: ${car.year},Averege speed: ${avgSpeed} km/h, 
-		Fuel capacity: ${fuelCapacity} liters, Averege fuel Consumption: ${avgFuelConsumption} l/100km, Drivers: ${car.drivers.join(', ')}`);
+	alert(`Brand: ${car.brand}, Model: ${car.model}, Year: ${car.year},
+Averege speed: ${car.avgSpeed} km/h, Fuel capacity: ${car.fuelCapacity} liters, Averege fuel Consumption: ${car.avgFuelConsumption} l/100km, Drivers: ${car.drivers.join(', ')}`);
 }
 
 function addDriver() {
