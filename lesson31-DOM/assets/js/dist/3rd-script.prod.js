@@ -1,0 +1,1 @@
+"use strict";var activeIndex=0;function changeColour(){for(var e=document.getElementsByClassName("light"),t=0;t<e.length;t++)e[t].style.background="#000";e[activeIndex].style.background="",++activeIndex>=e.length&&(activeIndex=0)}
