@@ -33,11 +33,17 @@ let playList = [
  song:"ENTER SANDMAN"
 }
 ];
+let play = document.createElement('h1')
+play.innerText = ('Playlist')
+document.body.append(play)
 
-let list = document.getElementById('my-playlist')
+let songs = document.createElement('ol')
+document.body.append(songs)
+let list = document.getElementsByTagName('ol')
 
 playList.forEach((item) => {
     let li = document.createElement('li')
     li.innerText = `${item.author} - ${item.song}`
-    list.appendChild(li)
+    songs.appendChild(li)
 })
+
