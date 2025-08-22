@@ -1,0 +1,56 @@
+.zoneTextDiv{
+    width: 400px;
+    height: 300px;
+    border: 10px solid saddlebrown;
+    overflow: auto;
+    padding: 10px;
+    cursor: grab;
+}
+
+textarea{
+    display: none;
+    width: 400px;
+    height: 300px;
+    border: 10px solid aquamarine;
+}
+
+table{
+    width: 500px;
+    height: 500px;
+    border: 1px solid gray;
+    tr{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    text-transform:capitalize;
+    border: 1px solid green;
+        th{
+            cursor: pointer;
+        }
+        th:hover{
+            color: purple;
+        }
+        td{
+            border: 1px solid purple;
+        }
+    }
+}
+
+
+
+.zoneForText{
+    width: 300px;
+    height: 300px;
+    resize: both;
+    border: 1px solid saddlebrown;
+    position: relative;
+}
+.resize{
+    width: 15px;
+    height: 15px;
+    background-color: saddlebrown;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor:move;
+}
