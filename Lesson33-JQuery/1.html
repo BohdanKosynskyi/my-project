@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Донат діаграми</title>
+  
+  <!-- jQuery -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  
+  <!-- CSS плагіна -->
+  <link rel="stylesheet" href="assets/css/simple-donut.css">
+  
+  <!-- JS плагіна -->
+  <script src="assets/js/simple-donut-jquery.js"></script>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      height: 100vh;
+      background: #f4f6f8;
+    }
+    .chart {
+      text-align: center;
+    }
+    .caption {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="chart">
+    <div id="donut1" data-percent="65"></div>
+    <div class="caption">Прогрес 65%</div>
+  </div>
+  
+  <div class="chart">
+    <div id="donut2" data-percent="90"></div>
+    <div class="caption">Прогрес 90%</div>
+  </div>
+  
+  <script>
+    $(function(){
+      $("#donut1").donutchart({
+        size: "150px",
+        fgColor: "#ff9800",
+        bgColor: "#ddd",
+        text: "65%"
+      }).trigger("show");
+      
+      $("#donut2").donutchart({
+        size: "150px",
+        fgColor: "#4caf50",
+        bgColor: "#ddd",
+        text: "90%"
+      }).trigger("show");
+    });
+  </script>
+</body>
+</html>
