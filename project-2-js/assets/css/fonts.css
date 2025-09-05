@@ -1,0 +1,38 @@
+@font-face {
+ 	font-family: Montserrat-bold;
+	src:url('../fonts/Montserrat-Bold.woff2') format('woff2');
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+}
+
+@font-face {
+ 	font-family: Montserrat-Regular;
+	src:url('../fonts/Montserrat-Regular.woff2') format('woff2');
+	font-family: Montserrat;
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0.3375rem;
+}
+
+@font-face {
+ 	font-family: OpenSans-italic;
+	src:url('../fonts/OpenSans-Italic.woff2') format('woff2');
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.75rem;
+	letter-spacing: 0.1rem;
+}
+
+@font-face {
+ 	font-family: OpenSans-regular;
+	src:url('../fonts/OpenSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+ 	font-family: SoursSansPro-regular;
+	src:url('../fonts/SourceSansPro-Regular.woff2') format('woff2');
+}

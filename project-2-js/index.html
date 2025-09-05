@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montisello</title>
+    <meta name="Montisello" content="site about buildings">
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 months" />
+    <link rel="alternate" hreflang="x-default" href="https://bohdankosynskyi.github.io/my-project/">
+    <link rel="alternate" hreflang="uk" href="https://bohdankosynskyi.github.io/my-project/">
+    <link rel="alternate" hreflang="en" href="https://bohdankosynskyi.github.io/my-project/">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Montisello">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://bohdankosynskyi.github.io/my-project/">
+    <meta property="og:site_name" content="Montisello">
+    <meta property="og:image" content="https://mysite.com/assets/images/og-pic.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/android-chrome-512x512.png">
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "PARETTO",
+  "url": "https://mysite.com/",
+  "logo": "https://mysite.com/files/userfiles/logo.svg",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "0000000000000",
+    "contactType": "customer service",
+    "areaServed": "UA",
+    "availableLanguage": [
+      "English"
+    ]
+  }],
+  "sameAs": [  
+    "https://t.me/XXX",
+    "viber://chat?number=%2BXXX",
+    "https://wa.me/XXX"  
+  ]
+}
+</script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+                <a href="#">
+                    <img src="assets/images/Logo.png" alt="Montisello logo">
+                </a>
+                <div class="hamburger">
+                    <button type="button" class="open" onclick='openMenu()'>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="overlay"></div>
+                <div class="mobile-menu-panel">
+                    <div class="mm-top">
+                        <div class="logo">
+                            <img src="assets/images/Logo.png" alt="Montisello">
+                        </div>
+                        <div class="hamburger">
+                            <button type="button" class="close" onclick='closeMenu()'>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <nav class="mobile-menu">
+                        <ul>
+                            <li><a href="#">WHAT WE DO</a></li>
+                            <li><a href="#">LATEST NEWS</a></li>
+                            <li><a href="#">GALLERY</a></li>
+                            <li><a href="#">CONTACTS</a></li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+                <nav class="site-nav">
+                    <ul>
+
+                        <li>
+                            <a href="#what">
+                                <div class="empty"></div>
+                                <span>what we do</span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#news">
+                                <div class="empty"></div>
+                                <span>latest news</span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#gallery">
+                                <div class="empty"></div>
+                                <span>gallery</span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#contacts">
+                                <div class="empty"></div>
+                                <span>contacts</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <nav class="media-nav">
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <div class="svg-round">
+                                    <svg class="icon">
+                                        <use xlink:href="assets/images/sprite.svg#fb"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <div class="svg-round">
+                                    <svg class="icon">
+                                        <use xlink:href="assets/images/sprite.svg#twetter"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <div class="svg-round">
+                                    <svg class="icon">
+                                        <use xlink:href="assets/images/sprite.svg#insta"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="hero">
+            <div class="overlay"></div>
+            <h1>SIMPLE & MODERN</h1>
+            <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            <a href="#what">
+                <div class="triangle">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                </div>
+            </a>
+        </section>
+        <section class="what-we-do">
+            <div class="container">
+                <div class="fake-line"></div>
+                <h2 id="what">WHAT WE DO</h2>
+                <div class="block">
+                    <div class="img-block">
+                        <img class="lazy"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                            data-src="assets/images/modern-building.webp" alt="modern-building">
+                    </div>
+                    <div class="info-block">
+                        <span>ONE WORLD</span>
+                        <h3>TRADE CENTER</h3>
+                        <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
+                            truth is, our thoughts are very powerful.</p>
+                        <a href="#">
+                            <div class="box-1">
+                                <div class="btn btn-one">
+                                    <span>MORE DETAILS</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.google.com/maps/place/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@40.6921504,-75.1620883,9z/data=!3m1!4b1!4m10!1m2!2m1!1sNew+York+City,+United+States+-+1776+feet!3m6!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!15sCihOZXcgWW9yayBDaXR5LCBVbml0ZWQgU3RhdGVzIC0gMTc3NiBmZWV0kgEIbG9jYWxpdHngAQA!16zL20vMDJfMjg2?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
+                            class="location" target="_blank">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                                            stroke="#2C4058" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                                            stroke="#2C4058" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                New York City, United States - 1776 feet </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="block second-block">
+                    <div class="img-block">
+                        <img class="lazy"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                            data-src="assets/images/old-building.webp" alt="old-building">
+                    </div>
+                    <div class="info-block">
+                        <span>INTERNATIONAL</span>
+                        <h3>COMMERCE CENTRE</h3>
+                        <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of
+                            recognition and how a digital advertising network may help.</p>
+                        <a href="#">
+                            <div class="box-1">
+                                <div class="btn btn-one">
+                                    <span>MORE DETAILS</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.google.com/maps/place/%D0%93%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D0%B3/@22.3530259,113.8097253,10z/data=!3m1!4b1!4m6!3m5!1s0x3403e2eda332980f:0xf08ab3badbeac97c!8m2!3d22.3193039!4d114.1693611!16zL20vMDNoNjQ?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
+                            class="location" target="_blank">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                                            stroke="#2C4058" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                                            stroke="#2C4058" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                                Hong Kong - 1588 feet</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest-news">
+            <div class="bg-img">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="fake-line"></div>
+                    <h2 id="news">LATEST NEWS</h2>
+                    <div class="news-table">
+                        <ul id="lightSlider" class="card-wrapper"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="fake-line"></div>
+                <h2>GALLERY</h2>
+
+                <div id="lightgallery" class="gallery-photo">
+
+                    <div class="item item-large">
+                        <a data-src="assets/images/lg1.webp">
+                            <img class="lazy" src="data:image/png;base64,..." data-src="assets/images/lg1.webp"
+                                alt="1-photo">
+                            <span class="overlay"></span>
+                        </a>
+                    </div>
+
+                    <div class="grid-div">
+                        <div class="item">
+                            <a data-src="assets/images/2.webp">
+                                <img class="lazy" src="data:image/png;base64,..." data-src="assets/images/2.webp"
+                                    alt="2-photo">
+                                <span class="overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a data-src="assets/images/3.webp">
+                                <img class="lazy" src="data:image/png;base64,..." data-src="assets/images/3.webp"
+                                    alt="3-photo">
+                                <span class="overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a data-src="assets/images/4.webp">
+                                <img class="lazy" src="data:image/png;base64,..." data-src="assets/images/4.webp"
+                                    alt="4-photo">
+                                <span class="overlay"></span>
+                            </a>
+                        </div>
+                        <div class="item lazy">
+                            <a data-src="assets/images/5.webp">
+                                <img class="lazy" src="data:image/png;base64,..." data-src="assets/images/5.webp"
+                                    alt="5-photo" alt="5-photo">
+                                <span class="overlay"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="div-btn">
+                    <a href="#" class="a-btn">
+                        <div class="box-1">
+                            <div class="btn btn-one">
+                                <span>SEE MORE</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="contacts" id="contacts">
+        <div class="table">
+            <div class="fake-line"></div>
+            <h2>get in touch</h2>
+            <div class="contacts-info">
+                <div class="links">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://www.google.com/maps/place/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@40.6921504,-75.1620883,9z/data=!3m1!4b1!4m10!1m2!2m1!1sNew+York+City,+United+States+-+1776+feet!3m6!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!15sCihOZXcgWW9yayBDaXR5LCBVbml0ZWQgU3RhdGVzIC0gMTc3NiBmZWV0kgEIbG9jYWxpdHngAQA!16zL20vMDJfMjg2?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
+                        class="location" target="_blank">
+                        <span>
+                            91 Nolan Extensions Suite 670</span>
+                    </a><br>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+0013568682454"><span>
+                            +001 356-868-2454</span></a><br>
+                    <i class="fa-solid fa-inbox"></i>
+                    <a href="mailto:montichello@service.com"><span>
+                            montichello@service.com</span></a><br>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>From 07:05AM to 19:30PM</span>
+                </div>
+                <div class="user">
+                    <input type="text" id="nameInput" name="user-name" placeholder="Name">
+                    <input type="email" id="email" pattern=".+@example\.com" placeholder="Email" required />
+                    <a href="#">
+                        <div class="box-1">
+                            <div class="btn btn-one">
+                                <span>MORE DETAILS</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="map">
+            <div id="map">
+
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="logo-left">
+                <a href="#">
+                    <img src="assets/images/Logo.png" alt="Montisello logo">
+                </a>
+                <span>Copyrights © 2020 Montichello</span>
+            </div>
+            <div class="links-right">
+                <nav class="media-nav">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="svg-round">
+                                    <svg class="icon">
+                                        <use xlink:href="assets/images/sprite.svg#fb"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <div class="svg-round">
+                                    <svg class="icon">
+                                        <use xlink:href="assets/images/sprite.svg#twetter"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <div class="svg-round">
+                                    <svg class="icon">
+                                        <use xlink:href="assets/images/sprite.svg#insta"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+    <script src="assets/js/lazyload.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="assets/js/leaflet.js"></script>
+    <script src="assets/js/dist/main.prod.js"></script>
+
+</body>
+
+</html>
