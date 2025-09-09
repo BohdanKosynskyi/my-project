@@ -90,7 +90,7 @@ const cards = [
   {
     title: "SEE THE UNMATCHED BEAUTY OF THE GREAT.",
     text: "Free directories: directories are perfect for customers that are searching for...",
-    img: "assets/images/image-1.webp",
+    img: "assets/images/Image-1.webp",
     avatar: "assets/images/avatar/1.webp",
     author: "ALJA BRUN",
     date: "20 Jan 2020",
@@ -98,7 +98,7 @@ const cards = [
   {
     title: "EFFECTIVE ADVERTISING POINTERS.",
     text: "Having a home based business is a wonderful asset to your life...",
-    img: "assets/images/image-2.webp",
+    img: "assets/images/Image-2.webp",
     avatar: "assets/images/avatar/2.webp",
     author: "DOMINIC FREEMAN",
     date: "13 Dec 2019",
@@ -106,7 +106,7 @@ const cards = [
   {
     title: "HYPNOTIZE YOURSELF INTO THE GHOST.",
     text: "There are many things that are important to catalog design...",
-    img: "assets/images/image-3.webp",
+    img: "assets/images/Image-3.webp",
     avatar: "assets/images/avatar/1.webp",
     author: "ALICE WARD",
     date: "30 Nov 2019",
