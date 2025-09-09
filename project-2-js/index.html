@@ -276,9 +276,12 @@
                     <h2 id="news">LATEST NEWS</h2>
                     <div class="news-table">
                         <ul id="lightSlider" class="card-wrapper"></ul>
+                        <div class="custom-controls">
+                            <div id="prevSlide"><i class="fas fa-chevron-left"></i></div>
+                            <div id="nextSlide"><i class="fas fa-chevron-right"></i></div>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
 
@@ -365,15 +368,13 @@
                     <span>From 07:05AM to 19:30PM</span>
                 </div>
                 <div class="user">
-                    <input type="text" id="nameInput" name="user-name" placeholder="Name">
-                    <input type="email" id="email" pattern=".+@example\.com" placeholder="Email" required />
-                    <a href="#">
-                        <div class="box-1">
-                            <div class="btn btn-one">
-                                <span>MORE DETAILS</span>
-                            </div>
-                        </div>
-                    </a>
+                    <form id="subscr">
+                        <input type="text" id="name" name="user-name" placeholder="Name">
+                        <input type="email" id="email" placeholder="Email" required />
+                        <button type="submit" class="btn btn-one">
+                            <span>SUBMIT</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -438,7 +439,7 @@
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
     <script src="assets/js/leaflet.js"></script>
-    <script src="assets/js/dist/main.prod.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
